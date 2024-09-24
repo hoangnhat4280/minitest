@@ -6,25 +6,24 @@
 </head>
 <body>
 <script>
-    function isPrime(num) {
-        if (num <= 1) return false;
+      function isPrime(num) {
+        if (num < 2)
+            return false;
         for (let i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i === 0) return false;
+            if (num % i === 0)
+                return false;
         }
         return true;
     }
     let count = 0;
     let num = 10;
-    let primes = [];
     while (count < 5) {
         if (isPrime(num)) {
-            primes.push(num);
+            console.log(num)
             count++;
         }
         num++;
     }
-    console.log(primes);
-
 </script>
 </body>
 </html>
