@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function drawRectangle(width, height) {
+        let result = "";
+        result += "*".repeat(width) + "<br>";
+        for (let i = 0; i < height - 2; i++) {
+            result += "*" + " ".repeat(width - 2) + "*<br>";
+        }
+        result += "*".repeat(width) + "<br>";
+        document.write(result);
+    }
+
+    drawRectangle(20, 10);
+
+</script>
+
+</body>
+</html>
